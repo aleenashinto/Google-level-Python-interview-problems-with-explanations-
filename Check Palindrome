@@ -1,0 +1,10 @@
+def is_palindrome(s):        # Define a function to check palindrome
+    if s == s[::-1]:         # Compare the string with its reversed version
+        return True          # Return True if both are same
+    else:                    # Otherwise
+        return False         # Return False
+
+Example
+
+Input : "madam"
+Output : True
