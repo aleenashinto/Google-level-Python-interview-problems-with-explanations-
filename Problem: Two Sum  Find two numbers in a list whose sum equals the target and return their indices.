@@ -1,0 +1,40 @@
+Problem: Two Sum
+
+Find two numbers in a list whose sum equals the target and return their indices.
+
+```python
+def two_sum(nums, target):          # Define a function named two_sum with inputs nums and target
+
+    num_dict = {}                   # Create an empty dictionary to store numbers and their indices
+
+    for i, num in enumerate(nums):  # Loop through the list and get both index (i) and number (num)
+
+        complement = target - num   # Calculate the number needed to reach the target
+
+        if complement in num_dict:  # Check if the complement already exists in the dictionary
+            return [num_dict[complement], i]  # Return the index of complement and current index
+
+        num_dict[num] = i           # Store the current number and its index in the dictionary
+```
+
+### Example
+
+```
+nums = [2,7,11,15]
+target = 9
+```
+
+Output:
+
+```
+[0,1]
+```
+
+Because:
+
+```
+2 + 7 = 9
+```
+
+---
+
