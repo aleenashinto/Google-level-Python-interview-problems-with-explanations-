@@ -1,0 +1,13 @@
+def reverse_string(s):        # Define a function that takes a string s
+    result = ""               # Create an empty string to store the reversed result
+
+    for char in s:            # Loop through each character in the string
+        result = char + result # Add each character in front to reverse the string
+
+    return result             # Return the reversed string
+
+
+Example
+
+Input  : "hello"
+Output : "olleh"
